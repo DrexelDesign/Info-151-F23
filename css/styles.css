@@ -13,6 +13,9 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --blue: #42B4EE;
+  --blueLight: #42B4EE10;
+  --purple: #591EAE;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -331,12 +334,49 @@ template {
 /* =============
     Base
 ============= */
+#validation-btn {
+  margin-top: 100px;
+}
+
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+}
+
+.blue-btn {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
+.disabled-btn {
+  background-color: var(--blueLight);
+  color: var(--blue);
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
 /* =============
     Forms
 ============= */
@@ -366,3 +406,41 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Plans
+============= */
+#plans h1 {
+  margin-bottom: 30px;
+}
+#plans ul {
+  margin-top: 30px;
+}
+#plans .plan-card {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: var(--white);
+  -webkit-box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+          box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+  padding: 50px;
+}
+#plans .plan-card button {
+  margin-top: 50px;
+}
+#plans #selected-card {
+  background-color: var(--purple);
+  padding: 1px;
+  border-radius: 10px;
+}
+#plans #selected-card > div {
+  border-radius: 10px;
+  background-color: var(--white);
+}
+#plans #selected-card > div #selected-top {
+  color: var(--white);
+  background-color: var(--purple);
+  padding: 50px 50px 0 50px;
+  border-radius: 10px;
+}
+#plans #selected-card > div #selected-bottom {
+  padding: 0px 50px 50px 50px;
+}

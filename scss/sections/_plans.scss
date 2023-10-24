@@ -1,0 +1,51 @@
+/* =============
+    Plans
+============= */
+#plans{
+
+    h1{
+        margin-bottom: 30px;
+    }
+
+    ul{
+        margin-top: 30px;
+    }
+
+    .plan-card{
+        //----------------
+        // this is only for week 4 & 5 so we can see the cards
+        display: inline-block;
+        // ---------------
+
+        border-radius: 10px;
+        background-color: var(--white);
+        box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+        padding: 50px;
+
+        button{
+            margin-top: 50px;
+        }
+    }
+
+    #selected-card{
+        background-color: var(--purple);
+        padding: 1px;
+        border-radius: 10px;
+        >div{
+            border-radius: 10px;
+            background-color: var(--white);
+
+            #selected-top{
+                color: var(--white);
+                background-color: var(--purple);
+                padding: 50px 50px 0 50px;
+                border-radius: 10px;
+                
+            }
+
+            #selected-bottom{
+                padding: 0px 50px 50px 50px;
+            }
+        }
+    }
+}
