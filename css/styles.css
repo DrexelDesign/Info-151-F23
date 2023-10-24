@@ -13,6 +13,10 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --blue: #42B4EE;
+  --blueLight: #42B4EE10;
+  --purple: #591EAE;
+  --charcoal: #051114;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -331,12 +335,35 @@ template {
 /* =============
     Base
 ============= */
+#validation-btn {
+  margin-top: 100px;
+}
+
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+}
+
 /* =============
     Forms
 ============= */
@@ -366,3 +393,33 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: var(--charcoal);
+  color: var(--white);
+  padding: 100px 0 50px;
+}
+footer #footer-top h1 {
+  margin-bottom: 30px;
+}
+footer #footer-top #newsletter form {
+  display: inline-block;
+}
+footer #footer-top #newsletter form input {
+  border: 1px solid rgba(255, 255, 255, 0.3137254902);
+  border-right: none;
+  background-color: var(--charcoal);
+  padding: 13px 3px;
+  border-radius: 5px 0px 0px 5px;
+}
+footer #footer-top #newsletter form button {
+  color: var(--white);
+  background-color: var(--blue);
+  padding: 15px 30px;
+  margin-left: -3px;
+  border-radius: 0 5px 5px 0;
+}
+footer hr {
+  border: none;
+  background-color: var(--white);
+  height: 1px;
+}

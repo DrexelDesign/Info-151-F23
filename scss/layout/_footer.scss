@@ -1,3 +1,48 @@
 /* =============
     Footer
 ============= */
+footer{
+    background-color: var(--charcoal);
+    color: var(--white);
+    padding: 100px 0 50px;
+
+    #footer-top{
+        h1{
+            margin-bottom: 30px;
+        }
+        #newsletter{
+            form{
+                // -------------
+                // this is only for week 4
+                display: inline-block;
+                // ------------
+
+                // border: 1px solid var(--white);
+                input{
+                    border: 1px solid #ffffff50;
+                    border-right: none;
+                    background-color: var(--charcoal);
+                    padding: 13px 3px;
+                    border-radius: 5px 0px 0px 5px;
+                }
+                button{
+                    color: var(--white);
+                    background-color: var(--blue);
+                    padding: 15px 30px;
+                    margin-left: -3px;
+                    border-radius: 0 5px 5px 0;
+                }
+            }
+        }
+    }
+
+    hr{
+        border: none;
+        background-color: var(--white);
+        height: 1px;
+    }
+
+    #footer-bottom{
+
+    }
+}
