@@ -1,0 +1,26 @@
+/* =============
+    Navigation
+============= */
+a{
+    text-decoration: none;
+}
+
+
+
+nav{
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        li{
+            a:link, a:visited{
+                font-size: rem-cacl(18);
+                color: var(--white);
+                margin-left: 60px;
+            }
+
+            a:hover,a:active{
+
+            }
+        }
+    }
+}

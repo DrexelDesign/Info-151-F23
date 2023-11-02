@@ -1,0 +1,15 @@
+/* =============
+    Hero
+============= */
+#hero{
+   color: var(--white);
+    background: linear-gradient(130deg, #461096 0%, #7F3CE0 100%);
+
+    #hero-content{
+        h1{
+            margin-bottom: 140px;
+            font-size: rem-calc(60);
+            font-weight: 600;
+        }
+    }
+}
