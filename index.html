@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Week 5 Plans</title>
+</head>
+
+<body>
+    <section id="plans">
+        <div id="plans-top">
+            <h1>Choose your best pricing plan</h1>
+            <p>Added for Monthly
+            <label class="switch">
+                <input type="checkbox">
+            </label> Yearly</p>
+        </div>
+        
+
+          <ul>
+            <li class="plan-card">
+                <h2>Start-up</h2>
+                <img src="img/line.svg" alt="">
+                <h1><span>$10</span>/mo</h1>
+                <ul>
+                    <li>Easy Customizable</li>
+                    <li>Commercial license</li>
+                    <li>Signal user license</li>
+                    <li>Hotline support 24/7</li>
+                </ul>
+                <button class="disabled-btn">TRY THIS PACKAGE</button>
+            </li>
+
+            <li class="plan-card" id="selected-card">
+                <div>
+                    <section id="selected-top">
+                        <h2>Classic</h2>
+                        <img src="img/line-white.svg" alt="">
+                        <h1><span>$30</span>/mo</h1>
+                    </section>
+                    <section id="selected-bottom">
+                        <ul>
+                            <li>Easy Customizable</li>
+                            <li>Commercial license</li>
+                            <li>Signal user license</li>
+                            <li>Hotline support 24/7</li>
+                        </ul>
+
+                        <button class="blue-btn">TRY THIS PACKAGE</button>
+                    </section>
+                </div>
+            </li>
+
+            <li class="plan-card">
+                <h2>Premium</h2>
+                <img src="img/line.svg" alt="">
+                <h1><span>$49</span>/mo</h1>
+                <ul>
+                    <li>Easy Customizable</li>
+                    <li>Commercial license</li>
+                    <li>Signal user license</li>
+                    <li>Hotline support 24/7</li>
+                </ul>
+                <button class="disabled-btn">TRY THIS PACKAGE</button>
+            </li>
+          </ul>
+    </section>
+
+    <div id="validation-btn">
+        <!--https://validator.w3.org/nu/?doc=YOUR-NETLIFY-URL-GOES-HERE  -->
+        <a href="https://validator.w3.org/nu/?doc=https://week-3-plans-homework--info-151.netlify.app/" target="_blank">
+            <img src="img/html-logo.svg" alt="Valid HTML 5">
+        </a>
+    </div>
+
+    <script src="js/scripts-dist.js"></script>
+    
+</body>
+
+</html>
