@@ -1,0 +1,57 @@
+/* =============
+    Navigation
+============= */
+
+.showMainNav{
+    display: block !important;
+}
+
+.showSignIn{
+    display: flex !important;
+    justify-content: flex-end;
+}
+
+a{
+    text-decoration: none;
+}
+
+#main-nav{
+    display: none;
+
+    ul{
+
+        @include xl{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        li{
+            border-bottom: 1px solid var(--gray);
+            text-align: right;
+
+            @include xl{
+                border: none;
+                text-align: center;
+            }
+
+            a:link,a:visited{
+                color: var(--gray);
+                font-size: rem-calc(18);
+                transition: 0.25s;
+                display: inline-block;
+                padding: 24px;
+                width: 100%;
+                box-sizing: border-box;
+
+                @include xl{
+                    padding-bottom: 0;
+                }
+            }
+
+            a:hover,a:active{
+                color: var(--green);
+            }
+        }
+    }
+}

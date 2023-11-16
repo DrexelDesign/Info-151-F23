@@ -1,0 +1,37 @@
+/* =============
+    Buttons
+============= */
+
+button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.green-btn{
+    
+    padding: 16px 24px;
+    background-color: var(--green);
+    transition: 0.25s;
+    color: var(--white);
+    border-radius: 8px;
+}
+
+.green-btn:hover{
+    background-color: var(--white);
+    color: var(--green);
+}
+
+.white-btn{
+    border: 1px solid var(--green);
+    padding: 16px 24px;
+    background-color: var(--white);
+    transition: 0.25s;
+    color: var(--green);
+    border-radius: 8px;
+}
+
+.white-btn:hover{
+    background-color: var(--grey);
+    color: var(--white);
+}
