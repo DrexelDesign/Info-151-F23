@@ -1,0 +1,83 @@
+/* =============
+    Header
+============= */
+header{
+
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: 
+    "logo burger"
+    "nav nav"
+    "signIn signIn";
+    height: 100%;
+
+    @include md{
+        grid-template-columns: 40% 50% auto;
+        grid-template-areas: 
+        "logo signIn burger"
+        "nav nav nav";
+    }
+
+    @include xl{
+        grid-template-columns: 25% auto 25%;
+        grid-template-areas: 
+        "logo nav signIn ";
+    }
+
+    #logo-container{
+        grid-area: logo;
+        padding: 24px 0 0px 24px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    #main-nav{
+        grid-area: nav;
+    }
+
+    #sign-in-up-buttons{
+
+        display: none;
+        grid-area: signIn;
+        
+        padding: 21px 24px;
+
+        @include md{
+            display: flex;
+            justify-content: flex-end;
+            padding: 24px 0 0;
+            align-items: center;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        @include xl{
+            padding-right: 24px;
+        }
+
+        button{
+            margin-left: 16px;
+        }
+    }
+
+    #burger-container{
+        grid-area: burger;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 24px;
+        padding-right: 24px;
+        height: 100%;
+        box-sizing: border-box;
+
+        @include xl{
+            display: none;
+        }
+
+        button{
+            color: var(--black);
+        }
+    }
+}

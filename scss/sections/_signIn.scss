@@ -1,0 +1,52 @@
+/* =============
+    Sign In
+============= */
+#sign-in-container{
+    
+    // background-color: var(--green);
+    background-color: #024A58B3;
+    height: 100vh;
+    
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    display: none;
+
+    form{
+        background-color: #024A58CC;
+        padding: 24px;
+        box-sizing: border-box;
+        border-radius: 8px;
+
+        #close-button-container{
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 24px;
+        }
+
+        input{
+            width: 100%;
+            box-sizing: border-box;
+            height: 60px;
+            margin-bottom: 24px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        #sign-in-button-container{
+            display: flex;
+            justify-content: flex-end;
+
+            button{
+                background-color: var(--greenLight);
+                color: var(--white);
+                border: 1px solid var(--white);
+            }
+        }
+    }
+}

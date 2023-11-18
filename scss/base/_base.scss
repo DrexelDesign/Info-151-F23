@@ -1,0 +1,24 @@
+/* =============
+    Base
+============= */
+
+.show-signIn-container{
+    display: flex !important;
+}
+
+.hide-burger-x{
+    display: none !important;
+}
+
+.hide-burger-bars{
+    display: none !important;
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style: none;
+    }
+}
