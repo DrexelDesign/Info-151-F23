@@ -664,7 +664,7 @@ header #burger-container button {
   background-image: url("../img/hero.jpg");
   background-position: center;
   background-size: cover;
-  height: 200vh;
+  height: 90vh;
 }
 
 /* =============
@@ -727,4 +727,48 @@ header #burger-container button {
   background-color: var(--greenLight);
   color: var(--white);
   border: 1px solid var(--white);
+}
+
+/* =============
+    FancyBox
+============= */
+#fancybox {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". fb .";
+  margin: 50px 0;
+}
+@media (min-width: 768px) {
+  #fancybox {
+    margin: 100px 0;
+  }
+}
+@media (min-width: 1200px) {
+  #fancybox {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#fancybox #fb-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: fb;
+}
+#fancybox #fb-grid-item ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 16px auto;
+  grid-template-columns: 50% auto;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #fancybox #fb-grid-item ul {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+#fancybox #fb-grid-item ul li img {
+  width: 100%;
 }

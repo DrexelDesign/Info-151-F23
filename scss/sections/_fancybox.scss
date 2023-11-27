@@ -1,0 +1,44 @@
+/* =============
+    FancyBox
+============= */
+
+// .fancybox__container{
+//     --fancybox-bg: aqua;
+// }
+
+
+
+#fancybox{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". fb .";
+    margin: 50px 0;
+
+    @include md{
+        margin: 100px 0;
+    }
+
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
+
+    #fb-grid-item{
+        grid-area: fb;
+
+        ul{
+            display: grid;
+            grid-template-columns: 50% auto;
+            gap: 16px;
+
+            @include md{
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            li{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
