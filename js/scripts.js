@@ -1,4 +1,12 @@
-Fancybox.bind()
+Fancybox.bind();
+
+// const container = document.getElementById("myCarousel");
+const container = document.querySelector("#myCarousel");
+
+const options = { infinite: true };
+
+new Carousel(container, options);
+
 
 
 
@@ -81,5 +89,5 @@ burgerBtn.addEventListener("click", showNav);
  signInBtn.addEventListener("click", showSignInModal);
  closeSignUpModalBtn.addEventListener("click", hideSignInModal);
 
- signInContainer.addEventListener("click", hideSignInModal);
+//  signInContainer.addEventListener("click", hideSignInModal);
  

@@ -1,0 +1,50 @@
+/* =============
+    FancyCarousel
+============= */
+
+#fancyCarousel{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". fc .";
+    margin: 50px 0;
+
+    @include md{
+        margin: 100px 0;
+    }
+
+    @include lg{
+        grid-template-columns: auto 1200px auto;
+    }
+
+    #fc-grid-item{
+        grid-area: fc;
+
+        // img{
+        //     width: 100%;
+        // }
+
+        .slide{
+            height: 40vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #fc-1{
+            background-image: url("../img/fancy/fancy-1.jpg");   
+        }
+
+        #fc-2{
+            background-image: url("../img/fancy/fancy-2.jpg");   
+        }
+
+        #fc-3{
+            background-image: url("../img/fancy/fancy-3.jpg");   
+        }
+
+        #fc-4{
+            background-image: url("../img/fancy/fancy-4.jpg");   
+        }
+
+    }
+
+}
